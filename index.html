@@ -17,8 +17,25 @@
     </header>
 
     <main>
+        <div id="task-manager-container" class="tmanager-container">
+            <input type="text" name="input-item" id="input-box" placeholder="Task for today">
 
-        
+            <button id="task-button" onclick="addTask()">Add</button>
+
+        </div>
+
+        <hr>
+        <div class="counter-container">
+            <div id="task-counters">
+                Completed: <span id="completed-counter">0</span>  | Uncompleted:
+                 <span id="uncompleted-counter">0</span>
+
+            </div>
+
+        </div>
+
+
+
     </main>
 
 
