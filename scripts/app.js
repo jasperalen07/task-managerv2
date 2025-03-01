@@ -32,6 +32,31 @@ function addTask(){
 
 // Start to make sure the buttons work, by doing an event listener
 
-const 
+const checkbox = li.querySelector('input');
+const editBtn = li.querySelector('edit-btn');
+const taskSpan = li.querySelector('span');
+const deleteBtn = li.querySelector('delete-btn');
+
+// make an event listener for the checkbox, when the task is completed it should create a line thorugh the middle. Must do a css but first we will create a toggle
+
+checkbox.addEventListener("click", function() {
+    li.classlist.toggle("completed", checkbox.checked);
+});
+
+// Make an event listener for the edit button, that you can also update
+
+editBtn.addEventListener("click", function(){
+    const update = prompt("Edit Task:", taskSpan.textContent);
+    if (update !== null){
+        taskSpan.textContent = update;
+        li.classlist.remove("completed");
+    }
+
+});
+
+// Task functionality, to track the tasks that are complete and uncompleted the counter makes that happen
+
+const completedTasks = document.getElementById("completed-counter");
+const uncompletedTasks = document.getElementById("uncompleted-counter");
 
 
