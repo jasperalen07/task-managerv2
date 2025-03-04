@@ -53,10 +53,20 @@ function addTask(){
             li.classList.remove("completed");
     
             checkbox.checked = false;
-            updateCounters();
+            // updateCounters();
         }
     
     });
+
+    // Delete button functionality
+deleteBtn.addEventListener("click", function() {
+    if (confirm("Are you sure you want to delete this task? ")) {
+        li.remove();
+        updateCounters();
+    }
+
+
+});
 }
 
 
@@ -69,12 +79,17 @@ const uncompletedCounter = document.getElementById("uncompleted-counter");
 
 function updateCounters() {
     const completedTasks = document.querySelectorAll(".completed").length;
-    const uncompletedTasks = document.querySelectorAll("li.not(.completed)").length;
+    const uncompletedTasks = document.querySelectorAll("li:not(.completed)").length;
 completedCounter.textContent = completedTasks;
 uncompletedCounter.textContent = uncompletedTasks;
 
 updateCounters()
 
 }
+
+
+
+
+
 
 
