@@ -11,6 +11,7 @@ function addTask(){
         alert('Please write a task!')
         return;
     }
+
     // Once created a new element create a inner html
     const li =  document.createElement("li");
     
@@ -25,38 +26,55 @@ function addTask(){
     <span class="delete-btn">Delete</span>
     
     `;
+
+    const checkbox = li.querySelector('input');
+    const editBtn = li.querySelector('.edit-btn');
+    const taskSpan = li.querySelector('span');
+    const deleteBtn = li.querySelector('.delete-btn');
+
     
     taskContainer.appendChild(li);
     inputBox.value ="";
+    // Start to make sure the buttons work, by doing an event listener
+    
+    checkbox.addEventListener("click", function() {
+        li.classList.toggle("completed", checkbox.checked);
+    
+        updateCounters();
+    });
+    // make an event listener for the checkbox, when the task is completed it should create a line thorugh the middle. Must do a css but first we will create a toggle
+    
+    // Make an event listener for the edit button, that you can also update
+    
+    editBtn.addEventListener("click", function(){
+        const update = prompt("Edit Task:", taskSpan.textContent);
+        if (update !== null){
+            taskSpan.textContent = update;
+            li.classList.remove("completed");
+    
+            checkbox.checked = false;
+            updateCounters();
+        }
+    
+    });
 }
 
-// Start to make sure the buttons work, by doing an event listener
 
-const checkbox = li.querySelector('input');
-const editBtn = li.querySelector('edit-btn');
-const taskSpan = li.querySelector('span');
-const deleteBtn = li.querySelector('delete-btn');
 
-// make an event listener for the checkbox, when the task is completed it should create a line thorugh the middle. Must do a css but first we will create a toggle
-
-checkbox.addEventListener("click", function() {
-    li.classlist.toggle("completed", checkbox.checked);
-});
-
-// Make an event listener for the edit button, that you can also update
-
-editBtn.addEventListener("click", function(){
-    const update = prompt("Edit Task:", taskSpan.textContent);
-    if (update !== null){
-        taskSpan.textContent = update;
-        li.classlist.remove("completed");
-    }
-
-});
 
 // Task functionality, to track the tasks that are complete and uncompleted the counter makes that happen
 
-const completedTasks = document.getElementById("completed-counter");
-const uncompletedTasks = document.getElementById("uncompleted-counter");
+const completedCounter = document.getElementById("completed-counter");
+const uncompletedCounter = document.getElementById("uncompleted-counter");
+
+function updateCounters() {
+    const completedTasks = document.querySelectorAll(".completed").length;
+    const uncompletedTasks = document.querySelectorAll("li.not(.completed)").length;
+completedCounter.textContent = completedTasks;
+uncompletedCounter.textContent = uncompletedTasks;
+
+updateCounters()
+
+}
 
 
