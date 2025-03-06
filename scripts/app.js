@@ -78,12 +78,13 @@ const completedCounter = document.getElementById("completed-counter");
 const uncompletedCounter = document.getElementById("uncompleted-counter");
 
 function updateCounters() {
+
     const completedTasks = document.querySelectorAll(".completed").length;
     const uncompletedTasks = document.querySelectorAll("li:not(.completed)").length;
 completedCounter.textContent = completedTasks;
 uncompletedCounter.textContent = uncompletedTasks;
 
-updateCounters()
+
 
 }
 
