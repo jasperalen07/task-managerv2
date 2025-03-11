@@ -1,21 +1,25 @@
-body{
+body {
     margin: 0;
     padding: 0;
-    background-color:#8d8484 ;
+    font-family: Arial, sans-serif;
+    background-color: #8d8484;
 }
 
-.completed {
-    text-decoration: line-through;
-    color: gray;
-    border: 1px solid gray;
-  }
-
-  header {
+header {
     background-color: #b1a6a6;
     color: #fff;
     padding: 1.5rem;
     text-align: center;
     font-size: 1.3rem;
+}
+
+.title-container {
+    /* Add any specific styles for the title container if needed */
+}
+
+.project-title {
+    margin: 0;
+    font-size: 2rem;
 }
 
 .tmanager-container {
@@ -24,10 +28,19 @@ body{
     margin: 1rem;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%; /* Ensure the container does not exceed 320px */
+    height: auto;
+    margin: 1rem auto; /* Center the container */
+}
+
+#task-input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem; /* Added margin-bottom to create space between input box and button */
 }
 
 #input-box {
-    width: calc(100% - 50px);
+ 
     padding: 0.5rem;
     margin-right: 0.5rem;
     border: 1px solid #ccc;
@@ -35,11 +48,52 @@ body{
 }
 
 #task-button {
-    padding: 0.5rem 1.5rem;
-    margin-left: 1.5rem;
-    border: solid 1 px #ccc;
+    padding: 0.5rem .5rem; /* Adjusted padding to make the button smaller */
+    border: none;
     background-color: #0d0c75;
     color: #fff;
     border-radius: 5px;
     cursor: pointer;
 }
+/* Task list section */
+
+.task-list-title {
+    text-align: center;
+    margin-top: 1rem;
+    font-family: 1.5rem;
+}
+
+#task-list-container {
+    list-style-type: none;
+    padding: 0;
+}
+
+#task-list-container li {
+    padding: 0.5rem;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.edit-btn, .delete-btn {
+    cursor: pointer;
+    margin-left: 0.5rem;
+    color: #007bff;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+    border: 1px solid gray;
+}
+
+.counter-container {
+    text-align: center;
+    margin: 1rem;
+}
+
+#task-counters {
+    font-size: 1rem;
+}
+

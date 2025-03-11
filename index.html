@@ -10,46 +10,30 @@
 <body>
 
     <header>
-
         <div class="title-container"></div>
-        <h1 class="project-title">Task Manager </h1>
-
+        <h1 class="project-title">Task Manager</h1>
     </header>
 
     <main>
         <div id="task-manager-container" class="tmanager-container">
-            <input type="text" name="input-item" id="input-box" placeholder="Task for today">
-
-            <button id="task-button" onclick="addTask()">Add</button>
-
+            <div id="task-input-container">
+                <input type="text" name="input-item" id="input-box" placeholder="Task for today">
+                <button id="task-button" onclick="addTask()">Add</button>
+            </div>
         </div>
 
         <!-- task list -->
-      <h2>Task List</h2>
-      <ul id="task-list-container">
-        
-      </ul>
-    </div>
+        <h2 class="task-list-title">Task List</h2>
+        <ul id="task-list-container"></ul>
 
         <hr>
         <div class="counter-container">
             <div id="task-counters">
-                Completed: <span id="completed-counter">0</span>  | Uncompleted:
-                 <span id="uncompleted-counter">0</span>
-
+                Completed: <span id="completed-counter">0</span> | Uncompleted:
+                <span id="uncompleted-counter">0</span>
             </div>
-
         </div>
-
-
-
     </main>
-
-
-    
-
-
-
 
     <script src="scripts/app.js"></script>
 </body>
