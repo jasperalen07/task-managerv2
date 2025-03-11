@@ -13,6 +13,7 @@ header {
     font-size: 1.3rem;
 }
 
+
 .title-container {
     /* Add any specific styles for the title container if needed */
 }
@@ -63,6 +64,19 @@ header {
     font-family: 1.5rem;
 }
 
+.completed {
+    text-decoration: line-through;
+    color: rgb(0, 0, 0);
+    /* border: 3px solid rgb(123, 8, 134); */
+  }
+
+.task-list-wrapper {
+    margin-top: 1rem;
+    padding: .5rem;
+    border: solid 2px #770b0b;
+    border-radius: 5px;
+}
+
 #task-list-container {
     list-style-type: none;
     padding: 0;
@@ -70,6 +84,7 @@ header {
 
 #task-list-container li {
     padding: 0.5rem;
+    margin: 1rem;
     border-bottom: 1px solid #ccc;
     display: flex;
     justify-content: space-between;
@@ -78,15 +93,19 @@ header {
 
 .edit-btn, .delete-btn {
     cursor: pointer;
-    margin-left: 0.5rem;
-    color: #007bff;
+    color: crimson;
+    margin: 0.3rem 0.5rem;
+    border: none;
+    padding: 0.3rem 0.5rem;
+    border-radius: 5px;
+    background-color: antiquewhite;
 }
 
-.completed {
+/* .completed {
     text-decoration: line-through;
     color: gray;
     border: 1px solid gray;
-}
+} */
 
 .counter-container {
     text-align: center;
