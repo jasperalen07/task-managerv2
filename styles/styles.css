@@ -87,18 +87,28 @@ header {
     margin: 1rem;
     border-bottom: 1px solid #ccc;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Ensure items are spaced correctly */
     align-items: center;
+}
+
+/* Add a container for the buttons */
+.button-container {
+    display: flex;
+    gap: 0.05rem; /* Further reduced gap to bring buttons closer together */
 }
 
 .edit-btn, .delete-btn {
     cursor: pointer;
     color: crimson;
-    margin: 0.3rem 0.5rem;
-    border: none;
+    border: solid 1px crimson;
     padding: 0.3rem 0.5rem;
     border-radius: 5px;
     background-color: antiquewhite;
+}
+
+/* Remove the separate margin-left for delete button since we're using gap */
+.delete-btn {
+    /* Remove margin-left: 1rem; */
 }
 
 /* .completed {
