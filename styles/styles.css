@@ -75,6 +75,8 @@ header {
     padding: .5rem;
     border: solid 2px #770b0b;
     border-radius: 5px;
+    width: 90%;
+    margin: .5rem auto;
 }
 
 #task-list-container {
@@ -91,19 +93,33 @@ header {
     align-items: center;
 }
 
+#task-list-container li label {
+    flex: 1; /* Allow the label to take up available space */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: calc(100% - 120px); /* Adjust max-width to leave space for buttons */
+}
+
+.task-font {
+    font-size: 1.2rem;
+}
+
 /* Add a container for the buttons */
 .button-container {
     display: flex;
-    gap: 0.05rem; /* Further reduced gap to bring buttons closer together */
+
+    gap: .7rem; /* Further reduced gap to bring buttons closer together */
 }
 
 .edit-btn, .delete-btn {
     cursor: pointer;
     color: crimson;
     border: solid 1px crimson;
-    padding: 0.3rem 0.5rem;
+    padding: 0.2rem 0.4rem;
     border-radius: 5px;
     background-color: antiquewhite;
+    font-size: 1rem;
 }
 
 /* Remove the separate margin-left for delete button since we're using gap */
