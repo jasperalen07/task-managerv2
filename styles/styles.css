@@ -93,6 +93,8 @@ header {
     align-items: center;
 }
 
+
+
 #task-list-container li label {
     flex: 1; /* Allow the label to take up available space */
     overflow: hidden;
@@ -142,3 +144,49 @@ header {
     font-size: 1rem;
 }
 
+
+/* Tablet mode */
+
+@media (min-width: 48rem) {
+ 
+    .tmanager-container{
+        width: 70%;
+        height: auto;
+    }
+
+    #task-input-container {
+        width: 50%;
+        margin: 0 auto; /* Center the input box and button */
+    }
+
+    #task-button {
+        width: 40%;
+        padding: .8rem; /* Adjusted padding to make the button smaller */
+        margin: .7rem;
+    }
+
+    #input-box {
+        width: 100%;
+        height: auto;
+        padding: .7rem;
+        margin: 1rem;
+    }
+
+    /* Task list container */
+
+    .task-list-title {
+        font-size: 1.5rem;
+        margin-top: 3rem;
+    }
+
+    .task-list-wrapper {
+        width: 70%;
+        height: auto;
+        margin: 1rem auto; /* Center the task list container */
+    }
+    #task-list-container {
+        width: 70%;
+        height: auto;
+        margin: 1rem auto; /* Center the task list container */
+    }
+}

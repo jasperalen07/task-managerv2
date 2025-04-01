@@ -17,7 +17,7 @@ function addTask(){
     
     li.innerHTML = `
     <label>
-    <input type = "checkbox">
+    <input class="checkbox" type = "checkbox">
     <span class="task-font">${task}</span>
     
     </label>
