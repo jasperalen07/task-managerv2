@@ -41,15 +41,14 @@ header {
 }
 
 #input-box {
- 
-    padding: 0.5rem;
-    margin-right: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    width: 100%; /* Default width for mobile mode */
+    height: auto;
+    padding: 0.3rem;
+    margin: 1rem;
 }
 
 #task-button {
-    padding: 0.5rem .5rem; /* Adjusted padding to make the button smaller */
+    padding: 0.4rem .4rem; /* Adjusted padding to make the button smaller */
     border: none;
     background-color: #0d0c75;
     color: #fff;
@@ -162,14 +161,14 @@ header {
     #task-button {
         width: 40%;
         padding: .8rem; /* Adjusted padding to make the button smaller */
-        margin: .7rem;
+        margin: 1rem;
     }
 
     #input-box {
-        width: 100%;
+        width: 85%; /* Increased width for tablet mode */
         height: auto;
         padding: .7rem;
-        margin: 1rem;
+        margin: 1rem auto; /* Center the input box */
     }
 
     /* Task list container */
