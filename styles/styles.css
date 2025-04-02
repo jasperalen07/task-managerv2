@@ -267,17 +267,17 @@ input[type="checkbox"] {
     }
 
     #input-box {
-        width: 75%; 
+        width: 70%; 
         height: auto;
-        padding: .7rem;
-        margin: 1rem auto; /* Center the input box */
+        padding: 1rem;
+        margin: .7rem auto; /* Center the input box */
     }
 
     /* Task list container */
 
     .task-list-title {
-        font-size: 1.5rem;
-        margin-top: 3rem;
+        font-size: 2rem ;
+        margin-top: 4rem;
     }
 
     .task-list-wrapper {
@@ -286,7 +286,7 @@ input[type="checkbox"] {
         margin: 1rem auto; /* Center the task list container */
     }
     #task-list-container {
-        width: 70%;
+        width: 65%;
         height: auto;
         margin: 1rem auto; /* Center the task list container */
     }
@@ -294,16 +294,16 @@ input[type="checkbox"] {
     /* Task list section */
 
     .task-list-title {
-        margin-top: 1.5rem;
+        margin-top: 1.7rem;
         font-size: 2rem;
     }
 
     .task-font {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
     }
 
     input[type="checkbox"] {
-        transform: scale(2); /* Adjust the scale value to make it larger */
+        transform: scale(2.5); /* Adjust the scale value to make it larger */
         margin: 1rem; /* Optional: Add some spacing around the checkbox */
     }
 
@@ -312,8 +312,17 @@ input[type="checkbox"] {
 
     .edit-btn, .delete-btn {
       
-        padding: 0.5rem 0.8rem;
-        font-size: 1.3rem;
+        padding: 0.7rem 1rem;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    #task-button {
+        padding: .7rem  .7rem; /* Adjusted padding to make the button smaller */
+        border: none;
+        cursor: pointer;
+        margin: .8rem;
+        width: 20%;
     }
 
     /* Counters section */
@@ -323,6 +332,6 @@ input[type="checkbox"] {
     }
     
     #task-counters {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
     }
 }
