@@ -60,7 +60,7 @@ header {
 .task-list-title {
     text-align: center;
     margin-top: 1rem;
-    font-family: 1.5rem;
+    font-size: 1.5rem;
 }
 
 .completed {
@@ -109,15 +109,15 @@ header {
 /* Add a container for the buttons */
 .button-container {
     display: flex;
-
-    gap: .7rem; /* Further reduced gap to bring buttons closer together */
+    gap: 1rem; /* Adjust the gap to control spacing between buttons */
+    justify-content: flex-end; /* Align buttons to the right */
 }
 
 .edit-btn, .delete-btn {
     cursor: pointer;
     color: crimson;
     border: solid 1px crimson;
-    padding: 0.2rem 0.4rem;
+    padding: 0.4rem 0.7rem;
     border-radius: 5px;
     background-color: antiquewhite;
     font-size: 1rem;
@@ -143,10 +143,26 @@ header {
     font-size: 1rem;
 }
 
+input[type="checkbox"] {
+    transform: scale(1.7); /* Adjust the scale value to make it larger */
+    margin: 0.5rem; /* Optional: Add some spacing around the checkbox */
+}
 
 /* Tablet mode */
 
 @media (min-width: 48rem) {
+
+    /* Header */
+    header {
+        background-color: #b1a6a6;
+        color: #fff;
+        padding: 2.7rem;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+
+    /* Task manager section */
  
     .tmanager-container{
         width: 70%;
@@ -187,5 +203,126 @@ header {
         width: 70%;
         height: auto;
         margin: 1rem auto; /* Center the task list container */
+    }
+
+    /* Task list section */
+
+    .task-list-title {
+        margin-top: 1.5rem;
+        font-size: 2rem;
+    }
+
+    .task-font {
+        font-size: 1.5rem;
+    }
+
+    input[type="checkbox"] {
+        transform: scale(2); /* Adjust the scale value to make it larger */
+        margin: 1rem; /* Optional: Add some spacing around the checkbox */
+    }
+
+
+    /* Buttons */
+
+    .edit-btn, .delete-btn {
+      
+        padding: 0.5rem 0.8rem;
+        font-size: 1.3rem;
+    }
+
+    /* Counters section */
+
+    .counter-container {
+        margin: 1.2rem;
+    }
+    
+    #task-counters {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 64rem) {
+
+    header {
+        padding: 3rem;
+        font-size: 2.3rem;
+    }
+
+
+    /* Task manager section */
+ 
+    .tmanager-container{
+        width: 60%;
+    }
+
+    #task-input-container {
+        width: 40%;
+        margin: 0 auto; /* Center the input box and button */
+    }
+
+    #task-button {
+        width: 35%;
+        padding: 1rem; /* Adjusted padding to make the button smaller */
+        margin: 1.2rem;
+    }
+
+    #input-box {
+        width: 75%; 
+        height: auto;
+        padding: .7rem;
+        margin: 1rem auto; /* Center the input box */
+    }
+
+    /* Task list container */
+
+    .task-list-title {
+        font-size: 1.5rem;
+        margin-top: 3rem;
+    }
+
+    .task-list-wrapper {
+        width: 70%;
+        height: auto;
+        margin: 1rem auto; /* Center the task list container */
+    }
+    #task-list-container {
+        width: 70%;
+        height: auto;
+        margin: 1rem auto; /* Center the task list container */
+    }
+
+    /* Task list section */
+
+    .task-list-title {
+        margin-top: 1.5rem;
+        font-size: 2rem;
+    }
+
+    .task-font {
+        font-size: 1.5rem;
+    }
+
+    input[type="checkbox"] {
+        transform: scale(2); /* Adjust the scale value to make it larger */
+        margin: 1rem; /* Optional: Add some spacing around the checkbox */
+    }
+
+
+    /* Buttons */
+
+    .edit-btn, .delete-btn {
+      
+        padding: 0.5rem 0.8rem;
+        font-size: 1.3rem;
+    }
+
+    /* Counters section */
+
+    .counter-container {
+        margin: 1.2rem;
+    }
+    
+    #task-counters {
+        font-size: 1.5rem;
     }
 }
