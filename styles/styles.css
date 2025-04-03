@@ -239,6 +239,11 @@ input[type="checkbox"] {
     #task-counters {
         font-size: 1.5rem;
     }
+
+    footer {
+        font-size: 1rem; /* Slightly larger font for tablets */
+        padding: 1.5rem;
+    }
 }
 
 @media (min-width: 64rem) {
@@ -334,4 +339,18 @@ input[type="checkbox"] {
     #task-counters {
         font-size: 1.7rem;
     }
+
+    footer {
+        font-size: 1.2rem; /* Larger font for desktops */
+        padding: 2rem;
+    }
+}
+
+/* Default styles for mobile */
+footer {
+    text-align: center;
+    background-color: #b1a6a6;
+    color: white;
+    padding: 1rem;
+    font-size: 0.9rem;
 }
