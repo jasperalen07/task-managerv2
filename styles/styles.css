@@ -7,7 +7,7 @@ body {
 
 header {
     background-color: #b1a6a6;
-    color: #fff;
+    color: #000000;
     padding: 1.5rem;
     text-align: center;
     font-size: 1.3rem;
@@ -155,9 +155,14 @@ input[type="checkbox"] {
 footer {
     text-align: center;
     background-color: #b1a6a6;
-    color: white;
+    color: #000000;
     padding: 1rem;
     font-size: 0.9rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: #000000;
 }
 
 /* Tablet mode */
@@ -167,7 +172,6 @@ footer {
     /* Header */
     header {
         background-color: #b1a6a6;
-        color: #fff;
         padding: 2.7rem;
         text-align: center;
         font-size: 2rem;
@@ -299,7 +303,7 @@ footer {
     }
 
     .task-list-wrapper {
-        width: 70%;
+        width: 60%;
         height: auto;
         margin: 1rem auto; /* Center the task list container */
     }
@@ -356,6 +360,12 @@ footer {
     footer {
         font-size: 1.7rem; /* Larger font for desktops */
         padding: 2rem;
+    }
+
+    footer a:hover {
+        text-decoration: underline;
+        color: #000000;
+       
     }
 }
 
