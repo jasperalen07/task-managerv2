@@ -11,11 +11,13 @@ header {
     padding: 1.5rem;
     text-align: center;
     font-size: 1.3rem;
+   
 }
 
 
 .title-container {
     /* Add any specific styles for the title container if needed */
+    margin-top: 1rem;
 }
 
 .project-title {
@@ -32,6 +34,7 @@ header {
     width: 90%; /* Ensure the container does not exceed 320px */
     height: auto;
     margin: 1rem auto; /* Center the container */
+    margin-top: 3rem;
 }
 
 #task-input-container {
@@ -76,6 +79,7 @@ header {
     border-radius: 5px;
     width: 90%;
     margin: .5rem auto;
+    margin-top: 3rem;
 }
 
 #task-list-container {
@@ -148,6 +152,14 @@ input[type="checkbox"] {
     margin: 0.5rem; /* Optional: Add some spacing around the checkbox */
 }
 
+footer {
+    text-align: center;
+    background-color: #b1a6a6;
+    color: white;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
 /* Tablet mode */
 
 @media (min-width: 48rem) {
@@ -190,7 +202,7 @@ input[type="checkbox"] {
     /* Task list container */
 
     .task-list-title {
-        font-size: 1.5rem;
+        font-size: 1.rem;
         margin-top: 3rem;
     }
 
@@ -241,8 +253,9 @@ input[type="checkbox"] {
     }
 
     footer {
-        font-size: 1rem; /* Slightly larger font for tablets */
-        padding: 1.5rem;
+        font-size: 1.4rem; /* Slightly larger font for tablets */
+        padding-top: 2rem;
+       
     }
 }
 
@@ -341,16 +354,9 @@ input[type="checkbox"] {
     }
 
     footer {
-        font-size: 1.2rem; /* Larger font for desktops */
+        font-size: 1.7rem; /* Larger font for desktops */
         padding: 2rem;
     }
 }
 
-/* Default styles for mobile */
-footer {
-    text-align: center;
-    background-color: #b1a6a6;
-    color: white;
-    padding: 1rem;
-    font-size: 0.9rem;
-}
+
